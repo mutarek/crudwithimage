@@ -8,7 +8,7 @@
         <!-- <img src="https://dhakacity.com.bd/wp-content/uploads/2022/06/One-day-magic-paradise-park.jpg.webp" alt="" srcset="" height="200"> -->
     </div>
     <div class="col card p-5 m-3">
-    <form action="{{url('/savedata')}}" method="post" enctype="">
+    <form action="{{url('/savedata')}}" method="post" enctype="multipart/form-data">
     @csrf 
     <div class="form-outline mb-3">
             @error('title')
