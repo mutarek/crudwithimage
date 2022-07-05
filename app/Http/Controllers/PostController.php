@@ -14,8 +14,16 @@ class PostController extends Controller
     {
         return view('admin/addpost');
     }
-    function savePost(Request $request)
+    function savedata(Request $request)
     {
-        
+        $rules = [
+            'title' => 'required|unique:posts|max:255',
+            'filetoupload'=> 'required|filetoupload|mimes:jpeg,png,jpg,gif|max:2048'
+         ];
+        $message = [
+            'title.required'=>'Please Type your Name',
+            'filetoupload.required'=>'Please Insert an Image',
+         ];
+         $this->validate($request,$rules,$message);
     }
 }

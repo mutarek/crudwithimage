@@ -21,7 +21,7 @@
 </head>
 <body>
 <header>
-        <a href="" class="logo"><img src="https://codemanbd.com/wp-content/uploads/2022/04/codemanBD-1.webp" alt=""></a>
+        <a href="{{url('/')}}" class="logo"><img src="https://codemanbd.com/wp-content/uploads/2022/04/codemanBD-1.webp" alt=""></a>
         <nav class="navbar">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -44,7 +44,7 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">Success</a></li>
+                <li><a href="{{url('/addpost')}}">Add Post</a></li>
                 <li><a href="#">Reviews</a></li>
                 <li><a href="#">Support</a></li>
                 <li><a href="#" id="sub3">Blog <i class="fa-solid fa-angle-down"></i></a>  
