@@ -10,7 +10,7 @@ class PostController extends Controller
 {
     function index()
     {
-        $alldata = Post::paginate(8);
+        $alldata = Post::paginate(5);
         return view('dashboard',compact('alldata'));
     }
     function addpost()

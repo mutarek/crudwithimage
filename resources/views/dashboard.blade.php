@@ -5,7 +5,7 @@
 @if(Session::has('msg'))
 <p class="text-info">{{Session::get('msg')}}</p>
 @endif
-<table class="table">
+<table class="table table-bordered">
   <thead>
     <tr>
       <th scope="col">ID</th>
@@ -32,5 +32,6 @@
     @endforeach
   </tbody>
 </table>
+
 </div>
 @endSection
