@@ -1,4 +1,5 @@
-@include('admin/header')
+@extends('template')
+@section('content')
 <div class="container">
 
 <div class="row">
@@ -23,4 +24,4 @@
     </div>
     </div>
     </div>
-@include('admin/footer')
+@endSection
