@@ -25,8 +25,8 @@
         <img src="{{asset($singledata->image)}}" alt="" width="100px" height="80px">
       </td>
       <td>
-        <a href="" class="btn btn-info">Edit</a>
-        <a href="" class="btn btn-danger">Delete</a>
+        <a href="{{url('/editpost/'.$singledata->id)}}" class="btn btn-info">Edit</a>
+        <a href="{{url('/deletepost/'.$singledata->id)}}" class="btn btn-danger">Delete</a>
       </td>
     </tr>
     @endforeach
